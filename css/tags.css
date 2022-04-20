@@ -1,0 +1,65 @@
+.html-open-tag::before{
+    content: "<html>";
+    left: var(--detachment-level-4-b);
+}
+.html-close-tag::after{
+    content: "<html/>";
+    left: var(--detachment-level-4-e);
+}
+.body-open-tag::before{
+    content: "<body>";
+    left: var(--detachment-level-3-b);
+}
+.body-close-tag::after{
+    content: "<body/>";
+    left: var(--detachment-level-3);
+}
+.article-tag::before{
+    content: "<articless>";
+    left: var(--detachment-level-2);
+}
+.article-tag::after{
+    content: "</article>";
+    left: var(--detachment-level-2);
+}
+.section-tag::before{
+    content: "<section>";
+    left: var(--detachment-level-4-b);
+}
+.section-tag::after{
+    content: "<section/>";
+    left: var(--detachment-level-4-b);
+}
+.h1-tag::before{
+    content: "<h1>";
+    left: var(--detachment-level-2);
+}
+.h1-tag::after{
+    content: "<h1/>";
+    left: var(--detachment-level-2);
+    display: inline;
+}
+.h2-tag::before{
+    content: "<h2>";
+    left: var(--detachment-level-2);
+}
+.h2-tag::after{
+    content: "<h2/>";
+    left: var(--detachment-level-2);
+}
+.p-tag::before{
+    content: "<p>";
+    left: var(--detachment-level-2);
+}
+.p-tag::after{
+    content: "<p/>";
+    left: var(--detachment-level-2);
+}
+.form-tag::before{
+    content: "<form>";
+    left: var(--detachment-level-1);
+}
+.form-tag::after{
+    content: "<form/>";
+    left: var(--detachment-level-1);
+}

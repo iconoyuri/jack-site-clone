@@ -1,0 +1,28 @@
+.bouncer>span{
+    display: inline-block;
+    opacity: 1;
+    transition: opacity ease 0.5s !important;
+}
+.letter-hidden{
+    opacity: 0 !important;
+}
+
+.let-bounce{
+    animation: bounce 1s ease-out ;
+}
+
+@keyframes bounce {
+    20%,50%,80%,to{
+        transform: scaleX(1) scaleY(1);
+    }
+    40%{
+        transform: scaleX(1.75) scaleY(0.65);
+    }
+    70%{
+        transform: scaleX(1.25) scaleY(0.75);
+    }
+    90%{
+        transform: scaleX(1.15) scaleY(0.85);
+    }
+}
+

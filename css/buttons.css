@@ -1,0 +1,63 @@
+.button-container{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    margin: 50px 0;
+}
+
+.button{
+    overflow: hidden;
+    color: var(--main-blue-color);
+    position: relative;
+    border: solid 1px var(--main-blue-color);
+    transition: color 0.1s;
+    letter-spacing: 3px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 50px;
+}
+
+.button:hover{
+    color: black;
+}
+
+.button::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: var(--main-blue-color);
+    position: absolute;
+    left:-15px;
+    top:0;
+    z-index: -1;
+    transform: skew(-15deg);
+    transition: width 0.5s;
+}
+
+.button:hover::before{
+    width: 150%;
+}
+
+.corner-cube{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 3px;
+    height: 3px;
+    background-color: var(--main-blue-color);
+}
+
+.button:hover .corner-cube{
+    background-color: white;
+}
+
+
+@media screen and (max-width:1300px){
+    .button{
+        width: 200px;
+        height: 45px;
+    }
+}

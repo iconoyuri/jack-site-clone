@@ -1,0 +1,131 @@
+
+.main-menu{
+    position: fixed;
+    z-index: 200;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: #181818;
+}
+
+.main-menu aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 160px;
+}
+
+.main-menu aside *{
+    width: 100%;
+}
+
+.visible{
+    display: block;
+}
+.invisible{
+    display: block;
+}
+
+.jack-part{
+    background-color: black;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jack-part>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jack-part *{
+    margin: 0;
+    padding: 0;
+}
+
+.jack-logo{
+    margin-bottom: 15px;
+}
+
+.jack-logo svg{
+    width: 60px;
+    height: auto;
+}
+
+.jack-logo p{
+    font-weight: bold;
+    font-size: 27px;
+    text-align: center;
+}
+
+.web-developer p{
+    color: #a5a5a5;
+    font-size: 12px;
+    text-align: center;
+}
+
+.site-pages{
+    border-bottom: solid 0.1px #9090961f;
+}
+
+.site-pages>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 0.1px #9090961f;
+}
+
+.site-pages p{
+    font-weight: lighter;
+    font-size: 16px;
+    color: #909096;
+    text-align: center;
+}
+
+.sn-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px; 
+    /* width: 100%; */
+    padding: 20px 10px;
+    max-width: 130px;
+    /* margin: 20px 0; */
+}
+
+.sn-links svg{
+    width: 15px;
+    height: 15px;
+    color: #909096;
+    transition: color 0.2s;
+    padding: 0;
+    margin: 0;
+}
+
+.sn-links svg:hover{
+    color: var(--main-blue-color);
+}
+
+@media screen and (max-width:1300px){
+    .main-menu{
+        width: 100vw !important;
+        z-index: 999;
+    }
+    .main-menu aside{
+        padding-bottom: 0;
+    }
+    .jack-part{
+        height: 210px;
+    }
+    .invisible{
+        display: none;
+    }
+}

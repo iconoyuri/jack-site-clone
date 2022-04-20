@@ -1,0 +1,55 @@
+.article-1{
+    padding-bottom: 60px;
+    position: relative;
+    padding-left: 0px !important;
+}
+
+.article-1>div:nth-child(1),
+.article-1>div:nth-child(2) {
+    padding-left: var(--page-padding-left);
+}
+
+.first-text p{
+    margin:0;
+    padding: 0;
+}
+
+.salutation{
+    font-size: var(--title-size);
+    font-weight: bold;
+    line-height: 70px;
+    min-width: 600px;
+}
+.first-text span{
+    transition: color 0.4s;
+}
+
+.first-text span:hover{
+    color: var(--main-blue-color);
+}
+
+.first-text svg{
+    width: 55px;
+    opacity: 0;
+    animation-duration: 0.5s;
+    animation-delay: .9s;
+    animation-name: jack-rotate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.profession{
+    color:#8d8d8d;
+    letter-spacing: 4px;
+}
+
+@keyframes jack-rotate {
+    from{
+        opacity: 0;
+        transform: rotate(-360deg);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}

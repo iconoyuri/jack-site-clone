@@ -1,0 +1,104 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.root-curtain{
+    height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #1d1d1d;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    left: -100%;
+    -webkit-transition: left 1s;
+    -o-transition: left 1s;
+    transition: left 1s;
+}
+
+.root-curtain svg{
+    width: 30px;
+}
+
+.root-curtain .jack-section{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0px;
+}
+
+.root-curtain p, .root-curtain svg, .root-curtain div{
+    margin:0 !important;
+    padding:0 !important;
+}
+
+.root-curtain svg{
+    line-height: 0;
+}
+
+.jack{
+    position: relative;
+    top: -20px;
+    font-weight: bold;
+}
+
+.jack-thinking{
+    /* font-family: calibri; */
+    position: relative;
+    top: -20px;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    color: rgb(131, 131, 131);
+    font-weight: 100;
+}
+
+.progress-bar{
+    height: 1px;
+    width: 500px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+progress{
+    height: 2px;
+    width: 500px;
+}
+
+.progress-bar::-webkit-progress-bar{
+    background-color: rgba(0, 0, 0, 0.563);
+}
+
+.progress-bar::-webkit-progress-value {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#08fdd8+0,fd1056+100 */
+background: #08fdd8; /* Old browsers */
+background: -moz-linear-gradient(left,  #08fdd8 0%, #fd1056 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #08fdd8 0%,#fd1056 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #08fdd8 0%,#fd1056 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08fdd8', endColorstr='#fd1056',GradientType=1 ); /* IE6-9 */
+
+}

@@ -1,0 +1,24 @@
+/* All the input and textarea tags are contained in div which have the "input" class */
+
+.input{
+    position: relative;
+}
+
+/* It's the before pseudo element which has to grow up and decorate
+    the input */
+
+.input::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-blue-color);
+    position: absolute;
+    bottom:0;
+    left:0;
+    transition: width 0.3s;
+}
+
+.input-filler::before{
+    width: 100%;
+}
+

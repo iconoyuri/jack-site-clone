@@ -1,0 +1,32 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteneur{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    /* transform: scaleX(1.5) scaleY(3); */
+}
+
+.conteneur:hover{
+    animation: bounce 1s linear;
+}
+
+@keyframes bounce {
+    20%,50%,80%,to{
+        transform: scaleX(1) scaleY(1);
+    }
+    40%{
+        transform: scaleX(1.15) scaleY(0.85);
+    }
+    70%{
+        transform: scaleX(1.1) scaleY(0.9);
+    }
+    90%{
+        transform: scaleX(1.05) scaleY(0.95);
+    }
+}
